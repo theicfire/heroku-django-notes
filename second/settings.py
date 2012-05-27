@@ -1,5 +1,7 @@
 import os
-PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
+print 'hey'
+PROJECT_ROOT = os.path.abspath('.')
+print PROJECT_ROOT
 # Django settings for second project.
 
 DEBUG = True
@@ -17,8 +19,8 @@ DATABASES = {
         'NAME': 'django_db',                      # Or path to database file if using sqlite3.
         'USER': 'django_login',                      # Not used with sqlite3.
         'PASSWORD': 'pimpin',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
