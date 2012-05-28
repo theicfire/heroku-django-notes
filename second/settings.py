@@ -1,7 +1,5 @@
 import os
-print 'hey'
 PROJECT_ROOT = os.path.abspath('.')
-print PROJECT_ROOT
 # Django settings for second project.
 
 DEBUG = True
